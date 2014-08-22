@@ -5,6 +5,8 @@ module Vedeu
     def open(mode, &block)
       @mode = mode
 
+      trap('SIGWINCH') { Vedeu.trigger(:_resize_) }
+
       if block_given?
         if raw_mode?
           console.raw    { initialize_screen { yield } }

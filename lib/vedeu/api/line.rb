@@ -27,6 +27,9 @@ module Vedeu
       #
       # @param value [String]
       #
+      # @example
+      #   TODO: add an example
+      #
       # @return [Array]
       def text(value)
         attributes[:streams] << { text: value }
@@ -34,6 +37,9 @@ module Vedeu
 
       # @param value [String]
       # @param block [Proc]
+      #
+      # @example
+      #   TODO: add an example
       #
       # @return [Array]
       def foreground(value = '', &block)
@@ -44,6 +50,9 @@ module Vedeu
 
       # @param value [String]
       # @param block [Proc]
+      #
+      # @example
+      #   TODO: add an example
       #
       # @return [Array]
       def background(value = '', &block)
